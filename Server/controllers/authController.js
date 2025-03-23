@@ -64,10 +64,10 @@ export const login = async (re,res) =>{
             maxAge: 7 * 24 * 60 * 60 * 1000
         });
 
-        return res.json({ success: true});
+        return res.json({ success: true, message: 'Logged out'});
 
     } catch(error){
-        return res.json({success: false, message: error.message})
+        return res.json({success: false, message: error.message});
     }
 }
 
